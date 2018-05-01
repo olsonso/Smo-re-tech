@@ -1,10 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+
+import Site from './site';
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
+import Router from './router';
+
 const Layout = ({ children }) => (
   <Site>
     <Helmet
-      title="Aaron is Awesome"
+      title="SMO're Tech"
       meta={[
-        { name: 'description', content: 'Aaron Klaser\'s personal wedsite, portfolio, blog, tutorials, and just cool $h!t' },
-        { name: 'keywords', content: 'resume, blog, porfolio, tutorials, aaron klaser' },
+        { name: 'description', content: 'Sonja Olson\'s personal wedsite, portfolio, blog, tutorials, and just cool $h!t' },
+        { name: 'keywords', content: 'resume, blog, porfolio, tutorials, sonja olson' },
       ]}
       script={[
         { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'},

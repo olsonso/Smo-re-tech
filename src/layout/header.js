@@ -17,7 +17,7 @@ class Header extends React.Component {
       <nav className="navbar"
           aria-label="main navigation"
           style={{
-            borderBottom: 'solid 1px #dddddd',
+            borderBottom: 'solid 2px #dddddd',
           }}>
         <div className="navbar-brand">
           <a className="navbar-item">
@@ -29,13 +29,14 @@ class Header extends React.Component {
                 borderBottomRightRadius: '50%',
                 marginRight: 15
               }}
-              src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAU3AAAAJGE1MzYxNzYzLTE1NTUtNDEyYi04MzRjLTgzZjNkOGU0MGIzNg.jpg"
+              src=""
               width="30px" alt="" />
-            <span>AaronKlaser.com</span>
+            <span>sonjaolson.me</span>
+            <br/>
           </a>
           <button className="button navbar-burger" onClick={this.toggleNav}>
-            <span></span>
-            <span></span>
+            <span>ere</span>
+            <span>ere</span>
             <span></span>
           </button>
         </div>
@@ -47,12 +48,7 @@ class Header extends React.Component {
               </span>
               Code Blog
             </a>
-            <a className="navbar-item">
-              <span className="icon" style={{ marginRight: 5 }}>
-                <i className="fab fa-lg fa-medium"></i>
-              </span>
-              Medium
-            </a>
+
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link" >
                 Projects
@@ -66,23 +62,23 @@ class Header extends React.Component {
                   This Site
                 </a>
                 <a className="navbar-item" >
-                  Angular The React Way
+                  Smore Tech
                 </a>
               </div>
             </div>
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="https://github.com/aaronklaser">
+            <a className="navbar-item" href="https://github.com/olsonso">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
               </span>
             </a>
-            <a className="navbar-item" href="https://twitter.com/awklaser">
+            <a className="navbar-item" href="https://twitter.com/smoretech">
               <span className="icon has-text-info" style={{ color: '#0084FF' }}>
                 <i className="fab fa-lg fa-twitter"></i>
               </span>
             </a>
-            <a className="navbar-item" href="http://resume.aaronklaser.com">
+            <a className="navbar-item" href="http://sonjaolson.me">
               Resume
               <span className="icon" style={{ color: '#0077B5', marginLeft: 5 }}>
                 <i className="fab fa-lg fa-linkedin"></i>
@@ -95,4 +91,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default Header;

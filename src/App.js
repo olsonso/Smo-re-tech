@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Blog from './blog';
+import Layout from './layout/layout';
 
 class App extends Component {
 
@@ -21,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Blog/>
+    <Layout />
       </div>
     );
   }

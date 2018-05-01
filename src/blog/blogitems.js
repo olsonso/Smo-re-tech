@@ -1,14 +1,39 @@
 import React from 'react';
-import * as Markdown from 'react-markdown';
-import PageContent from '../pageContent';
 import { Link } from 'react-router-dom';
+import * as Markdown from 'react-markdown';
+import moment from 'moment';
 
 const BlogItem = (props) => (
-  <div className="box content">
-    <h1>{props.title}</h1>
-       <Markdown source={props.content.split(" ").splice(0,150).join(" ").concat('...')} />
-  <div>
-  </div>
-  </div>
+  <div className="box">
+    <article className="media">
+      <div className="media-left">
+        <figure className="image is-64x64">
+          <img src={props.icon} alt="Image" />
+        </figure>
+      </div>
+      <div className="media-content">
+        <div className="content">
+
+          <h1>{props.title}</h1>
+          <Markdown source={props.content.split(" ").splice(0,150).join(" ").concat('...')} />
+        </div>
+        <div className="level">
+          <div className="level-left">
+            <Link className="level-item button is-small is-link is-outlined" to={props.path}>Read More</Link>
+          </div>
+        <div className="level-right">
+          <p className="level-item has-text-link is-size-7">
+            {moment(props.date).calendar(null, {
+              sameDay: '[Today]',
+              lastDay: '[Yesterday]',
+              lastWeek: '[Last] dddd',
+              sameElse: 'MMM Do YYYY'
+            })}
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
 )
-export default BlogItem;
+export default BlogItem
